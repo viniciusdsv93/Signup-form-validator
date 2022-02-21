@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    min-height: 100vh;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.container {
+    width: 85vw;
+    max-width: 1360px;
+    display: flex;
+}
+
+.container-left,
+.container-right {
+    padding: 30px;
+    flex: 1;
+}
+
+.container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container-left h1 {
+    font-size: 54px;
+    line-height: 60px;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.try-for-free {
+    background-color: hsl(248, 32%, 49%);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.try-for-free span {
+    font-weight: 600;
+}
+
+.form-body {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-body input {
+    border-radius: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    outline: none;
+    padding: 21px 30px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.border-red {
+    border: 2px solid hsl(0, 100%, 74%) !important;
+}
+
+#submit-button {
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    opacity: 0.6;
+}
+
+.form-body p {
+    margin-top: -10px;
+    color: rgb(197, 197, 197);
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-body a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.form-body a:hover {
+    text-decoration: underline;
+}
+
+.fname-error,
+.lname-error,
+.email-error,
+.pw-error {
+    display: flex;
+    justify-content: flex-end;
+    font-style: italic;
+    color: hsl(0, 100%, 74%);
+    margin-top: -15px;
+    font-size: 12px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution a {
+    color: #fff;
+    font-weight: 700;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1025px) {
+
+    .container {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .container-left {
+        text-align: center;
+        padding: 0;
+    }
+
+    .container-left h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .container-left p {
+        font-size: 16px;
+    }
+
+    .container-right {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .try-for-free {
+        text-align: center;
+        padding: 15px 50px;
+    }
+
+    .try-for-free p {
+        font-size: 16px;
+    }
+
+    .form-body {
+        padding: 25px;
+    }
+
+    .form-body input {
+        padding: 21px;
+    }
+
+    .form-body p {
+        padding: 0 16px;
+        font-size: 11px;
+    }
+
+    #submit-button {
+        font-size: 14px;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 60px;
+    }
+}
